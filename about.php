@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-<title>home</title>
+<title>about</title>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -74,20 +74,15 @@ session_start();
 
     <div class="jumbotron">
       <div id="forcolor">
-        <h2 style="text-align: center">ABC gym</h2>
-				<br>
+      <h2 style="text-align: center">About Us</h2>
+      <br>
 				<p style="text-align: justify;">A gymnasium, also known as a gym, is a covered location for athletics. The word is derived from the ancient Greek gymnasium. They are commonly found in athletic and fitness centers, and as activity and learning spaces in educational institutions. "Gym" is also slang for "fitness center", which is often an area for indoor recreation. A gym may be open air as well. A gym is a place with a number of equipments and machines used by the people to do exercises.</p>
-				<br>
-				<p><b style="color:blue;">For USER login : username - jaisu, password - 123</b></p>
-				<br>
-				<p><b style="color:gold;">For ADMIN login : username - admin2, password - 12345</b></p>
-				<br>
 				<p style="text-align: justify;">Gymnasia apparatuses such as barbells, jumping board, running path, tennis-balls, cricket field, and fencing area are used as exercises. In safe weather, outdoor locations are the most conducive to health. Gyms were popular in ancient Greece. Their curricula included self-defense, gymnastica medica, or physical therapy to help the sick and injured, and for physical fitness and sports, from boxing to dancing to skipping rope.</p>
-				
+        <p style="text-align: justify;">A gymnasium, also known as a gym, is a covered location for athletics. The word is derived from the ancient Greek gymnasium. They are commonly found in athletic and fitness centers, and as activity and learning spaces in educational institutions. "Gym" is also slang for "fitness center", which is often an area for indoor recreation. A gym may be open air as well. A gym is a place with a number of equipments and machines used by the people to do exercises.</p>
+        <p style="text-align: justify;">Gymnasia apparatuses such as barbells, jumping board, running path, tennis-balls, cricket field, and fencing area are used as exercises. In safe weather, outdoor locations are the most conducive to health. Gyms were popular in ancient Greece. Their curricula included self-defense, gymnastica medica, or physical therapy to help the sick and injured, and for physical fitness and sports, from boxing to dancing to skipping rope.</p>
       </div>
     </div>
-		
-
+ 
   <div class="extra">
     <p>&copy; ABC gym 2000-2020</p>
   </div>

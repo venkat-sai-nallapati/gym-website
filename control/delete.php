@@ -22,12 +22,7 @@ include('connectdb.php');
 </div>
 	</div>
 </div>
-						<!--
-<form action="" method="POST" id="f1">
-  ID : <input type="number" name="id" required> <br><br>
-  <input type="submit" name="submitted" value="DELETE">
-</form>
--->
+
 
 <?php		
 if(isset($_POST['submitted']))

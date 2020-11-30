@@ -13,8 +13,16 @@ color: red;
 }
 #forcolor{
   color: white;
+  width: 100%;
 }
-
+#cent{
+  width: 70%;
+  margin: auto;
+}
+h2{
+  /*background-color: skyblue;*/
+  color: red;
+}
 .container{
  margin-top:20px ;
   height: auto;

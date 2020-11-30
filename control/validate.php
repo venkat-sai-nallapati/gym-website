@@ -22,6 +22,12 @@ if ($result=mysqli_query($conn,$sql))
       $_SESSION["user"] = $input1;
       header("Location: ../dashboard.php", true, 301);
     }
+    else if($row['role_mem']=='admin1'){
+      echo 'login successfull';                     /* for partial admin login*/
+      $_SESSION["user"] = $input1;
+      header("Location: ../dashboard1.php", true, 301);
+
+    }
     else{
       echo 'login successfull';                     /* for member login*/
       $_SESSION["user"] = $input1;

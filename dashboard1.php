@@ -1,15 +1,19 @@
 <?php
-header("Refresh:5");
 session_start();
-include('control/connectdb.php');
+if(isset($_SESSION["user"])){
+
+}
+else{
+  header("Location: index.php", true, 301);
+}
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<title>user</title>
+<title>dashboard1</title>
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>contactus</title>
+    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -21,7 +25,7 @@ include('control/connectdb.php');
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <h1 style="color:white;">Welcome <?php echo $_SESSION["user"]?></h1>
+    <h1 style="color:white;">Welcome partial admin, <?php echo $_SESSION["user"]?></h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,27 +39,18 @@ include('control/connectdb.php');
       </ul>
 </nav>
 
-<div id="f1">
-<?php
-  $user=$_SESSION['user'];
-   $ins="SELECT id,nam,timing1,timing2,comments FROM members WHERE username='$user' ";
-   $result=mysqli_query($conn,$ins);
-   $rowcount=mysqli_num_rows($result);
-   if($rowcount==0)
-   {
-         echo '<script>alert("This account might be deleted.please consult admin.")</script>';
-        header( "refresh:3;url=index.php" );
-   }
-   else{
-    $result = $conn->query($ins);
-    $row = $result->fetch_assoc();
-    echo "<br> <h2 style='color:red'>  Hello ".$row['nam']."</h2><br>";
-    echo 'My morning work out time : '.$row['timing1']." a.m <br>";
-    echo 'My evening work out time : '.$row['timing2']." p.m <br> <br>";
-    echo '<marquee width="100%" direction="left" height="40px" scrollamount="20" style="border: 1px solid white">'.'<b style="color:lightblue">'.$row['comments'].'</b>'.'. A gymnasium, also known as a gym, is a covered location for athletics. The word is derived from the ancient Greek gymnasium.'.'</marquee>';
-   }
-?>
+<div class="container">
+    <p>*As you are partial admin, you can only view.</p>
+    <div id="adj1">
+      <a class="headbutton" href="control/view.php" target="myiframe">View</a>
+
+    </div>
+    <div id="adj2">
+      <iframe name="myiframe" id="ifra"></iframe>
+    </div>
+
 </div>
+
 
 <?php
 if(isset($_POST['logout']))
@@ -68,9 +63,5 @@ if(isset($_POST['logout']))
   header("Location: index.php", true, 301);
 }
 ?>
-
-
-
-
 </body>
 </html>

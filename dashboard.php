@@ -1,7 +1,13 @@
 <?php
 session_start();
+if(isset($_SESSION["user"])){
+
+}
+else{
+  header("Location: index.php", true, 301);
+}
 ?>
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 <title>dashboard</title>
@@ -19,7 +25,7 @@ session_start();
 </head>
 <body>
 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <h1 style="color:white;">Welcome <?php echo $_SESSION["user"]?></h1>
+    <h1 style="color:white;">Welcome admin, <?php echo $_SESSION["user"]?></h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
