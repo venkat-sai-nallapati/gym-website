@@ -1,5 +1,5 @@
 This is the code for localhost version (hosted using xampp) of the website. 
-The hosted version can be found here. As of now the website isnt hosted due to technical issues.
+The hosted version can be found here : https://nallapatisaigym.000webhostapp.com
 
 Key points:
 ============================================================
