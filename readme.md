@@ -1,4 +1,4 @@
-This is the code for localhost version (hosted using xampp) of the website. 
+This is the code for localhost version of the website (hosted using xampp). 
 The hosted version can be found here : https://nallapatisaigym.000webhostapp.com
 
 Key points:
